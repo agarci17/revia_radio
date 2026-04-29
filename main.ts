@@ -26,12 +26,13 @@ function mostramatriu (num: number) {
     strip.show()
 }
 input.onButtonPressed(Button.A, function () {
-    PlanetX_AILens.learnObject(PlanetX_AILens.learnID.ID1)
+    PlanetX_AILens.learnObject(PlanetX_AILens.learnID.ID4)
     music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
 })
 input.onButtonPressed(Button.AB, function () {
-    PlanetX_AILens.learnObject(PlanetX_AILens.learnID.ID3)
     music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    music.play(music.tonePlayable(196, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    PlanetX_AILens.ClearlearnObject()
 })
 input.onButtonPressed(Button.B, function () {
     PlanetX_AILens.learnObject(PlanetX_AILens.learnID.ID2)
